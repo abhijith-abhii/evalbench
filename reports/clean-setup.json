@@ -1,0 +1,9 @@
+{
+  "slug": "evalbench",
+  "fresh_venv": "work/clean-envs/evalbench",
+  "fresh_checkout": "work/clean/evalbench",
+  "passed": true,
+  "failure": null,
+  "runtime": "Python 3.12.14",
+  "model_training": null
+}

@@ -1,0 +1,98 @@
+{
+  "metadata": {
+    "model": "google/flan-t5-small",
+    "revision": "0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab",
+    "run": "flan-direct",
+    "actual_inference": true,
+    "device": "CPU",
+    "seed": 28,
+    "max_new_tokens": 35,
+    "cost_note": "No paid API; local electricity/hardware cost not measured"
+  },
+  "responses": {
+    "retention": {
+      "answer": "0",
+      "seconds": 0.0318,
+      "input_tokens": 14,
+      "output_tokens": 4,
+      "api_cost_usd": 0
+    },
+    "incident": {
+      "answer": "every day",
+      "seconds": 0.017,
+      "input_tokens": 15,
+      "output_tokens": 4,
+      "api_cost_usd": 0
+    },
+    "rto": {
+      "answer": "to recover from a traumatic event",
+      "seconds": 0.0359,
+      "input_tokens": 13,
+      "output_tokens": 10,
+      "api_cost_usd": 0
+    },
+    "refund": {
+      "answer": "0",
+      "seconds": 0.0154,
+      "input_tokens": 14,
+      "output_tokens": 4,
+      "api_cost_usd": 0
+    },
+    "limit": {
+      "answer": "240",
+      "seconds": 0.0158,
+      "input_tokens": 13,
+      "output_tokens": 4,
+      "api_cost_usd": 0
+    },
+    "hours": {
+      "answer": "September",
+      "seconds": 0.0121,
+      "input_tokens": 11,
+      "output_tokens": 3,
+      "api_cost_usd": 0
+    },
+    "port": {
+      "answer": "adolf",
+      "seconds": 0.0303,
+      "input_tokens": 13,
+      "output_tokens": 8,
+      "api_cost_usd": 0
+    },
+    "replicas": {
+      "answer": "ten",
+      "seconds": 0.0163,
+      "input_tokens": 13,
+      "output_tokens": 4,
+      "api_cost_usd": 0
+    },
+    "unknown": {
+      "answer": "a sys",
+      "seconds": 0.0276,
+      "input_tokens": 12,
+      "output_tokens": 8,
+      "api_cost_usd": 0
+    },
+    "currency": {
+      "answer": "dollar",
+      "seconds": 0.0117,
+      "input_tokens": 13,
+      "output_tokens": 3,
+      "api_cost_usd": 0
+    },
+    "owner": {
+      "answer": "a senate committee",
+      "seconds": 0.0303,
+      "input_tokens": 14,
+      "output_tokens": 9,
+      "api_cost_usd": 0
+    },
+    "ttl": {
+      "answer": "a year",
+      "seconds": 0.0179,
+      "input_tokens": 12,
+      "output_tokens": 5,
+      "api_cost_usd": 0
+    }
+  }
+}

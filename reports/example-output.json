@@ -1,0 +1,151 @@
+{
+  "bars": [
+    {
+      "label": "flan-direct",
+      "value": 0.0
+    },
+    {
+      "label": "flan-context",
+      "value": 0.37222500000000003
+    }
+  ],
+  "details": {
+    "left_metadata": {
+      "actual_inference": true,
+      "cost_note": "No paid API; local electricity/hardware cost not measured",
+      "device": "CPU",
+      "max_new_tokens": 35,
+      "model": "google/flan-t5-small",
+      "revision": "0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab",
+      "run": "flan-direct",
+      "seed": 28
+    },
+    "right_metadata": {
+      "actual_inference": true,
+      "cost_note": "No paid API; local electricity/hardware cost not measured",
+      "device": "CPU",
+      "max_new_tokens": 35,
+      "model": "google/flan-t5-small",
+      "revision": "0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab",
+      "run": "flan-context",
+      "seed": 28
+    },
+    "statistics": {
+      "bootstrap_95_interval": [
+        0.13889166666666666,
+        0.6333333333333333
+      ],
+      "cases": 12,
+      "left_mean_f1": 0.0,
+      "paired_delta": 0.37222500000000003,
+      "resamples": 5000,
+      "right_mean_f1": 0.37222500000000003,
+      "seed": 28
+    }
+  },
+  "metrics": {
+    "Cases": 12,
+    "Left mean F1": 0.0,
+    "Paired difference": 0.372,
+    "Right mean F1": 0.372
+  },
+  "notice": "Token overlap measures reference agreement, not factuality. Bootstrap intervals assume independent cases; this authored set is too small to establish general superiority.",
+  "rows": [
+    {
+      "expected": "14 days",
+      "id": "retention",
+      "left": "0",
+      "left_f1": 0,
+      "right": "ii.",
+      "right_f1": 0
+    },
+    {
+      "expected": "15 minutes",
+      "id": "incident",
+      "left": "every day",
+      "left_f1": 0,
+      "right": "a).",
+      "right_f1": 0
+    },
+    {
+      "expected": "30 minutes",
+      "id": "rto",
+      "left": "to recover from a traumatic event",
+      "left_f1": 0,
+      "right": "(iii)",
+      "right_f1": 0
+    },
+    {
+      "expected": "21 days",
+      "id": "refund",
+      "left": "0",
+      "left_f1": 0,
+      "right": "iii.",
+      "right_f1": 0
+    },
+    {
+      "expected": "8 megabytes",
+      "id": "limit",
+      "left": "240",
+      "left_f1": 0,
+      "right": "8 megabytes",
+      "right_f1": 1.0
+    },
+    {
+      "expected": "09:00 UTC",
+      "id": "hours",
+      "left": "September",
+      "left_f1": 0,
+      "right": "(ii)",
+      "right_f1": 0
+    },
+    {
+      "expected": "8080",
+      "id": "port",
+      "left": "adolf",
+      "left_f1": 0,
+      "right": "Port 8080",
+      "right_f1": 0.6667
+    },
+    {
+      "expected": "2",
+      "id": "replicas",
+      "left": "ten",
+      "left_f1": 0,
+      "right": "2",
+      "right_f1": 1.0
+    },
+    {
+      "expected": "unknown",
+      "id": "unknown",
+      "left": "a sys",
+      "left_f1": 0,
+      "right": "No",
+      "right_f1": 0
+    },
+    {
+      "expected": "USD",
+      "id": "currency",
+      "left": "dollar",
+      "left_f1": 0,
+      "right": "USD",
+      "right_f1": 1.0
+    },
+    {
+      "expected": "incident commander",
+      "id": "owner",
+      "left": "a senate committee",
+      "left_f1": 0,
+      "right": "The incident commander",
+      "right_f1": 0.8
+    },
+    {
+      "expected": "300 seconds",
+      "id": "ttl",
+      "left": "a year",
+      "left_f1": 0,
+      "right": "(iii)",
+      "right_f1": 0
+    }
+  ]
+}

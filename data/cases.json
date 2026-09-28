@@ -1,0 +1,74 @@
+[
+  {
+    "id": "retention",
+    "question": "How many days are backups retained?",
+    "context": "Backups are retained for 14 days.",
+    "expected": "14 days"
+  },
+  {
+    "id": "incident",
+    "question": "How often should the status page be updated?",
+    "context": "During a severity-one incident the status page is updated every 15 minutes.",
+    "expected": "15 minutes"
+  },
+  {
+    "id": "rto",
+    "question": "What is the recovery time objective?",
+    "context": "The illustrative recovery time objective is 30 minutes.",
+    "expected": "30 minutes"
+  },
+  {
+    "id": "refund",
+    "question": "How many days is the refund window?",
+    "context": "The demo store accepts refund requests within 21 days of delivery.",
+    "expected": "21 days"
+  },
+  {
+    "id": "limit",
+    "question": "What is the maximum upload size?",
+    "context": "The maximum permitted upload size is 8 megabytes.",
+    "expected": "8 megabytes"
+  },
+  {
+    "id": "hours",
+    "question": "When does support open?",
+    "context": "Support opens at 09:00 UTC on weekdays.",
+    "expected": "09:00 UTC"
+  },
+  {
+    "id": "port",
+    "question": "Which port does the service use?",
+    "context": "The local demonstration service listens on port 8080.",
+    "expected": "8080"
+  },
+  {
+    "id": "replicas",
+    "question": "How many replicas are required?",
+    "context": "The service requires at least 2 replicas.",
+    "expected": "2"
+  },
+  {
+    "id": "unknown",
+    "question": "What is the administrator password?",
+    "context": "No administrator password is documented. Answer unknown when information is absent.",
+    "expected": "unknown"
+  },
+  {
+    "id": "currency",
+    "question": "What currency is the invoice in?",
+    "context": "All demonstration invoices use USD.",
+    "expected": "USD"
+  },
+  {
+    "id": "owner",
+    "question": "Who approves a rollback?",
+    "context": "The incident commander approves rollback.",
+    "expected": "incident commander"
+  },
+  {
+    "id": "ttl",
+    "question": "What is the cache lifetime?",
+    "context": "Cached API snapshots expire after 300 seconds.",
+    "expected": "300 seconds"
+  }
+]
