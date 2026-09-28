@@ -23,11 +23,15 @@ Follow the README installation block, then: Run run_models.py to generate both a
 
 ## Five interview questions
 
-1. **What problem does this project solve, and what is its unit of work?** Explain compare model answers using repeatable evidence, identify ai engineers as the audience, and trace one concrete example through the files above. Use the demonstration output rather than hypothetical impact.
-2. **Why did you choose the first design decision?** Compare runs on identical case IDs and reject incomplete or mismatched response sets. Show the corresponding implementation and a test that would fail if that property were removed.
-3. **How do you protect correctness when inputs or execution change?** Separate actual generated responses, model metadata, latency and token counts from scoring code. Explain the relevant invalid-input or edge-case test and distinguish a checked property from an untested assumption.
-4. **How do you make results inspectable and reproducible?** Use paired bootstrap resampling of case-level differences rather than unrelated confidence intervals. Point to actual outputs and recorded commands. Explain why a successful example is weaker evidence than a tested boundary or independently reconciled total.
-5. **What would you improve before real deployment or real-data use?** Twelve authored cases; reference token overlap is not factuality, safety or human preference. Local measured latency is hardware-specific. Zero API cost excludes electricity and hardware. Direct/context prompts use the same model, so this is a prompt-configuration comparison. Choose one limitation, describe the missing evidence, and propose a measurable acceptance check rather than promising production readiness.
+1. **What is compared?** Actual local FLAN-T5-small answers under direct and context-assisted prompts on twelve authored QA cases. The toolkit compares these measured runs rather than claiming a general model ranking.
+
+2. **Why require matching case IDs?** If systems answer different cases, aggregate scores are not comparable. Coverage checks ensure the paired comparison uses the intended same evaluation set.
+
+3. **Why report exact match and token F1?** Exact match rewards identical normalized answers; token F1 gives partial overlap credit. Both can miss semantic correctness, so individual outputs remain available for review.
+
+4. **Why use a paired bootstrap?** Sampling case pairs preserves the correspondence between systems on each example. The interval reflects uncertainty from this small case set, not every possible user query.
+
+5. **How are bad model answers handled?** They are retained in the committed run artifacts and included in scores. The project does not replace errors with ideal fixture answers or discard unfavorable cases.
 
 ## Independent exercise
 
@@ -41,6 +45,6 @@ The implementation was developed with substantial AI assistance under Abhijith V
 
 Suggested factual bullet after personally validating the demo:
 
-- Implemented and validated compare model answers using repeatable evidence using Python · Flask, with dataset validation and documented correctness checks and limitations.
+- Evaluated actual local FLAN outputs under two prompt strategies using exact match, token F1, coverage validation and paired bootstrap intervals across twelve authored cases.
 
 Use [VERIFICATION.md](VERIFICATION.md) to add only measured numbers. Do not claim production traffic, users, savings, upstream acceptance or cloud deployment without corresponding evidence.
